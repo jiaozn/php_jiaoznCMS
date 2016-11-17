@@ -20,10 +20,16 @@ if(!empty($_SESSION['is_login'])){
 <a href='userAdd.php'>|   注册</a>
 <ul>
 <li>
-<a href='rizhi.php'>日志</a>
+<a href='rizhi.php'>1.日志</a>
 </li>
 <li>
-<a href='#'>文件</a>
+<a href='rizhiAdd.php'>----1.1新增日志</a>
+</li>
+<li>
+<a href='#'>2.文件</a>
+</li>
+<li>
+<a href=''>3.管理</a>
 </li>
 </ul>
 <hr>
