@@ -1,5 +1,5 @@
 <?php
-session_start();
+include 'header.php';
 if(!empty($_POST['sub'])){
 	$uname=$_POST['uname'];
 	$upassword=$_POST['upassword'];
@@ -16,7 +16,6 @@ if(!empty($_POST['sub'])){
 			echo "注册失败了呢....";
 		}
 	}
-include 'header.php';
 ?>
 <html>
 <body>
