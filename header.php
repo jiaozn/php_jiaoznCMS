@@ -22,9 +22,11 @@ if(!empty($_SESSION['is_login'])){
 <li>
 <a href='rizhi.php'>1.日志</a>
 </li>
-<li>
-<a href='rizhiAdd.php'>----1.1新增日志</a>
-</li>
+	<ul>
+	<li><a href='rizhiAdd.php'>----1.1新增日志</a></li>
+	<li><a href='rizhi.php'>----1.2编辑日志</a></li>
+	<li><a href='rizhi.php'>----1.3删除日志</a></li>
+	</ul>
 <li>
 <a href='#'>2.文件</a>
 </li>

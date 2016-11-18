@@ -19,6 +19,7 @@ echo '
 ';
 
 if($result){
+	date_default_timezone_set('PRC');
 	while($row=mysql_fetch_array($result)){
 			echo "
 			<tr>
@@ -26,8 +27,8 @@ if($result){
 			<td>$row[1]</td>
 			<td>$row[2]</td>
 			<td>$row[3]</td>
-			<td>date('M j,g:i,A',$row[4]);</td>
-			<td><a href='#'>编辑  |</a><a href='#'>   删除</a></td>
+			<td>".date('M j,Y.g:i,A',$row[4])."</td>
+			<td><a href='rizhiUpdate.php?rizhiid=".$row[0]."'>编辑  </a>|<a href='rizhiDelete.php?rizhiid=".$row[0]."'>   删除</a></td>
 			<tr>
 			";
 	}
@@ -36,13 +37,7 @@ if($result){
 }
 
 echo '</table>';
-
-//$arr=mysql_fetch_array($result);
-//print_r($arr['rizhiid']);
-
-
 ?>
-
 
 </body>
 </html>
