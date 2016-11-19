@@ -20,16 +20,22 @@ if(!empty($_SESSION['is_login'])){
 <a href='userAdd.php'>|   注册</a>
 <ul>
 <li>
-<a href='rizhi.php'>1.日志</a>
+1.日志
 </li>
 	<ul>
-	<li><a href='rizhiAdd.php'>----1.1新增日志</a></li>
-	<li><a href='rizhi.php'>----1.2编辑日志</a></li>
-	<li><a href='rizhi.php'>----1.3删除日志</a></li>
+	<li><a href='rizhi.php'>----1.1查看日志</a></li>
+	<li><a href='rizhiAdd.php'>----1.2新增日志</a></li>
+	<li><a href='rizhi.php'>----1.3编辑日志</a></li>
+	<li><a href='rizhi.php'>----1.4删除日志</a></li>
 	</ul>
 <li>
-<a href='#'>2.文件</a>
-</li>
+2.文件</li>
+	<ul>
+	<li><a href='fileShow.php'>1.1文件查看</a></li>
+	<li><a href='fileAdd.php'>1.2文件上传</a></li>
+	<li><a href='fileShow.php'>1.3文件删除</a></li>
+	</ul>
+
 <li>
 <a href=''>3.管理</a>
 </li>
